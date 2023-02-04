@@ -1,0 +1,19 @@
+1.
+public class Click{}
+public class Clack extends Click{}
+
+2.
+public abstract class Toopp{}
+public class Tip extends Toopp{}
+
+3.
+public interface Foo{}
+public class Bar implements Foo{}
+public class Baz extends Bar{}
+
+4.
+public interface Beta{}
+public interface Zeta{}
+public class Alpha implements Zeta{}
+public class Delta extends Alpha implements Beta{}
+

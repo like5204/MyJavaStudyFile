@@ -1,0 +1,27 @@
+1.什么是异常？解释抛出异常和捕获异常的含义。
+	异常是指程序中可能发生的错误，这些错误会影响程序的执行
+	抛出异常是指，在程序方法中用throws语句来将该方法中发生的异常抛出到调用处
+	捕获异常是指，在程序可能发生异常的代码块使用try和catch来捕获，并给予用户良好的错误提示
+
+2.简述java的异常处理机制。
+	在java中，存在着许多异常类，当一个java程序发生错误时，如果该错误有对应的异常类，java会生成相应异常类对象来处理，以防操作系统崩溃。
+
+3.系统定义的异常与用户定义的异常有何不同？如何使用这两类异常？
+	自己定义的异常必须是Exception的子类，自定义的异常类应该包含一个无参构造函数和一个接受错误提示字符串的构造函数。
+	系统异常 throw new IOException("发生io异常")
+	用户定义异常 
+	class UserException extends Exception
+	{
+		public UserException()
+		{
+			super();
+		}
+
+		public UserException(String msg)
+		{
+			super(msg);
+		}
+	}
+	throw new UserException("发生自定义错误");
+
+

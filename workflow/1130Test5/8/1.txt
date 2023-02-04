@@ -1,0 +1,8 @@
+After a call to the nextToken method, this field contains the type of the token just read. 
+For a single character token, its value is the single character, converted to an integer.
+For a quoted string token, its value is the quote character.
+Otherwise, its value is one of the following
+
+If a string quote character is encountered, then a string is recognized, consisting of all characters after (but not including) the string quote character,
+up to (but not including) the next occurrence of that same string quote character, or a line terminator, or end of file.
+The usual escape sequences such as "\n" and "\t" are recognized and converted to single characters as the string is parsed.
